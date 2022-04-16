@@ -1,0 +1,37 @@
+<!--employee application form-->
+<form method="post" action="#" #form="ngForm" (ngSubmit)="onsubmit(form)">
+	<p><label>First Name:</label><br>
+	<input type="text" name="fname" [(ngModel)]="Employee.fname"></p>
+	<p><label>Last Name:</label><br>
+	<input type="text" name="lname" [(ngModel)]="Employee.lname"></p>
+	<p><label>Email:</label><br>
+	<input type="email" name="email" [(ngModel)]="Employee.email"></p>
+	<p><label>Contact Number:</label><br>
+	<input type="tel" name="contact" [(ngModel)]="Employee.contact"></p>
+	<p><label>Address:</label><br>
+	<textarea cols="21" rows="3" [(ngModel)]="Employee.address" name="address"></textarea></p>
+	<p><label>User Name:</label><br>
+	<input type="text" name="user_name" [(ngModel)]="Employee.user_name" ></p>
+	<p><label>Password:</label><br>
+	<input type="Password" name="pwd" [(ngModel)]="Employee.pwd"></p>
+	<p><label> Gender:</label><br>
+	<input type="radio" name="gender" value="Male" [(ngModel)]="Employee.gender">Male
+	<input type="radio" name="gender1" value="Female" [(ngModel)]="Employee.gender">Female</p>
+	<p><label>Qualification:</label><br>
+	<select [(ngModel)]="Employee.qualification" name="qualification">
+		<option hidden="">--Select--</option>
+		<option>Bachelor of engineering</option>
+		<option>Btech</option>
+	</select></p>
+	<p><label>Experience:</label><br>
+	<select [(ngModel)]="Employee.experience" name="experience">
+		<option hidden="">--Select--</option>
+    <option>Fresher</option>
+		<option>1 or less than year</option>
+		<option>2 year</option>
+	</select></p>
+	<p><label>Coding Languages:</label><br>
+	<input type="text" name="language" [(ngModel)]="Employee.language"></p>
+	<input type="submit" name="" value="submit">
+
+</form>
