@@ -1,37 +1,37 @@
 <!--employee application form-->
 <form method="post" action="#" #form="ngForm" (ngSubmit)="onsubmit(form)">
 	<p><label>First Name:</label><br>
-	<input type="text" name="fname" [(ngModel)]="Employee.fname"></p>
+	<input type="text" name="fname" [(ngModel)]="Employee.fname" required></p>
 	<p><label>Last Name:</label><br>
-	<input type="text" name="lname" [(ngModel)]="Employee.lname"></p>
+	<input type="text" name="lname" [(ngModel)]="Employee.lname" required></p>
 	<p><label>Email:</label><br>
-	<input type="email" name="email" [(ngModel)]="Employee.email"></p>
+	<input type="email" name="email" [(ngModel)]="Employee.email" required></p>
 	<p><label>Contact Number:</label><br>
-	<input type="tel" name="contact" [(ngModel)]="Employee.contact"></p>
+	<input type="tel" name="contact" [(ngModel)]="Employee.contact" required></p>
 	<p><label>Address:</label><br>
-	<textarea cols="21" rows="3" [(ngModel)]="Employee.address" name="address"></textarea></p>
+	<textarea cols="21" rows="3" [(ngModel)]="Employee.address" name="address" required></textarea></p>
 	<p><label>User Name:</label><br>
-	<input type="text" name="user_name" [(ngModel)]="Employee.user_name" ></p>
+	<input type="text" name="user_name" [(ngModel)]="Employee.user_name" required></p>
 	<p><label>Password:</label><br>
-	<input type="Password" name="pwd" [(ngModel)]="Employee.pwd"></p>
+	<input type="Password" name="pwd" [(ngModel)]="Employee.pwd" required></p>
 	<p><label> Gender:</label><br>
 	<input type="radio" name="gender" value="Male" [(ngModel)]="Employee.gender">Male
 	<input type="radio" name="gender1" value="Female" [(ngModel)]="Employee.gender">Female</p>
 	<p><label>Qualification:</label><br>
-	<select [(ngModel)]="Employee.qualification" name="qualification">
+	<select [(ngModel)]="Employee.qualification" name="qualification" required>
 		<option hidden="">--Select--</option>
 		<option>Bachelor of engineering</option>
 		<option>Btech</option>
 	</select></p>
 	<p><label>Experience:</label><br>
-	<select [(ngModel)]="Employee.experience" name="experience">
+	<select [(ngModel)]="Employee.experience" name="experience" required>
 		<option hidden="">--Select--</option>
     <option>Fresher</option>
 		<option>1 or less than year</option>
 		<option>2 year</option>
 	</select></p>
 	<p><label>Coding Languages:</label><br>
-	<input type="text" name="language" [(ngModel)]="Employee.language"></p>
+	<input type="text" name="language" [(ngModel)]="Employee.language" required></p>
 	<input type="submit" name="" value="submit">
 
 </form>
